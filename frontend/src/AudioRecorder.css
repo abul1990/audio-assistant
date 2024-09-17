@@ -1,0 +1,95 @@
+.audio-recorder-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .icon-button {
+    padding: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #28a745;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    color: #218838;
+  }
+  
+  .icon-button.stop {
+    color: #dc3545;
+  }
+  
+  .icon-button.stop:hover {
+    color: #c82333;
+  }
+  
+  /* Sound Wave Animation */
+  .sound-wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .wave-bar {
+    width: 5px;
+    height: 30px;
+    margin: 0 2px;
+    background-color: #28a745;
+    animation: wave 1s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(2);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  .wave-bar:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .wave-bar:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wave-bar:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wave-bar:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wave-bar:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Audio Container */
+  .audio-container {
+    margin-top: 30px;
+  }
+  
+  audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  /* Results Section */
+  .results {
+    margin-top: 20px;
+  }
+  
+  .results h3 {
+    margin-bottom: 10px;
+  }
+  
+  .results p {
+    font-size: 16px;
+    color: #333;
+  }
